@@ -75,8 +75,8 @@
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
-									<li class="nav-item"><a class="nav-link" href="tracking.php">Theo dõi đơn hàng</a></li>
-									<li class="nav-item"><a class="nav-link" href="elements.php">Yếu tố</a></li>
+									<li class="nav-item"><a class="nav-link" href="tracking.php">Tracking</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
 								</ul>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="contact.php">Liên hệ</a></li>
@@ -117,7 +117,7 @@
 									<p>Mẫu mới nhất được sản xuất bởi Nike. Mẫu này giúp cho khách hàng có một cảm giác êm ái khi đang tập thể dục </p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Thêm </span>
+										<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
 									</div>
 								</div>
 							</div>
@@ -135,7 +135,7 @@
 									<p>Mẫu mới nhất được sản xuất bởi Nike. Mẫu này giúp cho khách hàng có một cảm giác êm ái khi đang tập thể dục </p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Thêm </span>
+										<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
 									</div>
 								</div>
 							</div>
@@ -173,7 +173,7 @@
 							<img src="img/features/f-icon2.png" alt="">
 						</div>
 						<h6>Chính sách đổi trả</h6>
-						<p>Các chính sách về việc đổi trả sản phẩm</p>
+						
 					</div>
 				</div>
 				<!-- single features -->
@@ -183,7 +183,7 @@
 							<img src="img/features/f-icon3.png" alt="">
 						</div>
 						<h6>24/7 Hỗ trợ	</h6>
-						<p>Sẽ luôn có một đội ngũ hỗ trợ bạn 24/7</p>
+						
 					</div>
 				</div>
 				<!-- single features -->
@@ -193,7 +193,7 @@
 							<img src="img/features/f-icon4.png" alt="">
 						</div>
 						<h6>Thanh toán an toàn</h6>
-						<p>Rất nhiều các phương thức thanh toán an toàn và tiện lợi</p>
+						
 					</div>
 				</div>
 			</div>
@@ -246,7 +246,7 @@
 								<img class="img-fluid w-100" src="img/category/c4.jpg" alt="">
 								<a href="img/category/c4.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Giày chính hãng</h6>
+										<h6 class="deal-title">Dép</h6>
 									</div>
 								</a>
 							</div>
@@ -259,7 +259,7 @@
 						<img class="img-fluid w-100" src="img/category/c5.jpg" alt="">
 						<a href="img/category/c5.jpg" class="img-pop-up" target="_blank">
 							<div class="deal-details">
-								<h6 class="deal-title">Hot Sale</h6>
+								<h6 class="deal-title">Giày bóng rổ</h6>
 							</div>
 						</a>
 					</div>
@@ -297,7 +297,7 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">Thêm vào giỏ hàng</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
@@ -320,7 +320,8 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p2.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -329,19 +330,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -352,28 +353,28 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p3.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
 								</div>
 								<div class="prd-bottom">
-
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -384,7 +385,8 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p4.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -393,19 +395,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -416,7 +418,8 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p5.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -425,19 +428,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -448,7 +451,8 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p6.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -457,19 +461,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -480,7 +484,8 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p7.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -489,19 +494,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -512,7 +517,8 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p8.jpg" alt="">
 							<div class="product-details">
-								<h6>Addidas </h6>
+								<h6>addidas New Hammer sole
+									for Sports person</h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -521,19 +527,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Giỏ hàng</p>
+										<p class="hover-text">add to bag</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Danh sách mong muốn</p>
+										<p class="hover-text">Wishlist</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">So sánh</p>
+										<p class="hover-text">compare</p>
 									</a>
-									<a href="./single-product.php" class="social-info">
+									<a href="" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">Xem thêm</p>
+										<p class="hover-text">view more</p>
 									</a>
 								</div>
 							</div>
@@ -840,19 +846,19 @@
 							<div class="row clock-wrap">
 								<div class="col clockinner1 clockinner">
 									<h1 class="days">10</h1>
-									<span class="smalltext">Ngày</span>
+									<span class="smalltext">Days</span>
 								</div>
 								<div class="col clockinner clockinner1">
 									<h1 class="hours">23</h1>
-									<span class="smalltext">Giờ</span>
+									<span class="smalltext">Hours</span>
 								</div>
 								<div class="col clockinner clockinner1">
 									<h1 class="minutes">47</h1>
-									<span class="smalltext">Phút</span>
+									<span class="smalltext">Mins</span>
 								</div>
 								<div class="col clockinner clockinner1">
 									<h1 class="seconds">59</h1>
-									<span class="smalltext">Giây</span>
+									<span class="smalltext">Secs</span>
 								</div>
 							</div>
 						</div>
@@ -866,13 +872,14 @@
 							<img class="img-fluid" src="img/product/e-p1.png" alt="">
 							<div class="product-details">
 								<div class="price">
-									<h6>$300.00</h6>
-									<h6 class="l-through">$400.00</h6>
+									<h6>$150.00</h6>
+									<h6 class="l-through">$210.00</h6>
 								</div>
-								<h4>Convert New</h4>
+								<h4>addidas New Hammer sole
+									for Sports person</h4>
 								<div class="add-bag d-flex align-items-center justify-content-center">
 									<a class="add-btn" href=""><span class="ti-bag"></span></a>
-									<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
+									<span class="add-text text-uppercase">Add to Bag</span>
 								</div>
 							</div>
 						</div>
@@ -884,10 +891,11 @@
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
 								</div>
-								<h4>Convert</h4>
+								<h4>addidas New Hammer sole
+									for Sports person</h4>
 								<div class="add-bag d-flex align-items-center justify-content-center">
 									<a class="add-btn" href=""><span class="ti-bag"></span></a>
-									<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
+									<span class="add-text text-uppercase">Add to Bag</span>
 								</div>
 							</div>
 						</div>
@@ -1066,7 +1074,8 @@
 					<div class="single-footer-widget">
 						<h6>Về chúng tôi</h6>
 						<p>
-							Thành lập vào những năm 2016, đến hiện tại chúng tôi đã có 2 chi nhánh tại Hà Nội và TPHCM. Karma Shop chúng tôi luôn muốn khách hàng có trải nghiệm tốt nhất !
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
+							magna aliqua.
 						</p>
 					</div>
 				</div>
