@@ -50,16 +50,16 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Trang chủ</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category.php">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-product.php">Product Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="checkout.php">Product Checkout</a></li>
-									<li class="nav-item"><a class="nav-link" href="cart.php">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="confirmation.php">Confirmation</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.php">Danh mục</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-product.php">Chi tiết sản phẩm</a></li>
+									<li class="nav-item"><a class="nav-link" href="checkout.php">Kiểm tra sản phẩm</a></li>
+									<li class="nav-item"><a class="nav-link" href="cart.php">Giỏ hàng</a></li>
+									<li class="nav-item"><a class="nav-link" href="confirmation.php">Xác nhận</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -67,19 +67,19 @@
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.php">Chi tiết blog</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+									<li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
 									<li class="nav-item"><a class="nav-link" href="tracking.php">Tracking</a></li>
 									<li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.php">Liên hệ</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="cart.php" class="cart"><span class="ti-bag"></span></a></li>
@@ -113,12 +113,11 @@
 						<div class="row single-slide align-items-center d-flex">
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
-									<h1>Nike New <br>Collection!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+									<h1>Nike<br>Sản phẩm mới nhất</h1>
+									<p>Mẫu mới nhất được sản xuất bởi Nike. Mẫu này giúp cho khách hàng có một cảm giác êm ái khi đang tập thể dục </p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Add to Bag</span>
+										<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
 									</div>
 								</div>
 							</div>
@@ -132,12 +131,11 @@
 						<div class="row single-slide">
 							<div class="col-lg-5">
 								<div class="banner-content">
-									<h1>Nike New <br>Collection!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+									<h1>Nike<br>Sản phẩm mới nhất</h1>
+									<p>Mẫu mới nhất được sản xuất bởi Nike. Mẫu này giúp cho khách hàng có một cảm giác êm ái khi đang tập thể dục </p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Add to Bag</span>
+										<span class="add-text text-uppercase">Thêm vào giỏ hàng</span>
 									</div>
 								</div>
 							</div>
@@ -164,8 +162,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon1.png" alt="">
 						</div>
-						<h6>Free Delivery</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Miễn phí vận chuyển</h6>
+						<p>Các vật phẩm sau sẽ được miễn phí vận chuyển</p>
 					</div>
 				</div>
 				<!-- single features -->
@@ -174,8 +172,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon2.png" alt="">
 						</div>
-						<h6>Return Policy</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Chính sách đổi trả</h6>
+						
 					</div>
 				</div>
 				<!-- single features -->
@@ -184,8 +182,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon3.png" alt="">
 						</div>
-						<h6>24/7 Support</h6>
-						<p>Free Shipping on all order</p>
+						<h6>24/7 Hỗ trợ	</h6>
+						
 					</div>
 				</div>
 				<!-- single features -->
@@ -194,8 +192,8 @@
 						<div class="f-icon">
 							<img src="img/features/f-icon4.png" alt="">
 						</div>
-						<h6>Secure Payment</h6>
-						<p>Free Shipping on all order</p>
+						<h6>Thanh toán an toàn</h6>
+						
 					</div>
 				</div>
 			</div>
@@ -215,7 +213,7 @@
 								<img class="img-fluid w-100" src="img/category/c1.jpg" alt="">
 								<a href="img/category/c1.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Sneaker for Sports</h6>
+										<h6 class="deal-title">Giày thể thao</h6>
 									</div>
 								</a>
 							</div>
@@ -226,7 +224,7 @@
 								<img class="img-fluid w-100" src="img/category/c2.jpg" alt="">
 								<a href="img/category/c2.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Sneaker for Sports</h6>
+										<h6 class="deal-title">Giày tập gym</h6>
 									</div>
 								</a>
 							</div>
@@ -237,7 +235,7 @@
 								<img class="img-fluid w-100" src="img/category/c3.jpg" alt="">
 								<a href="img/category/c3.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Product for Couple</h6>
+										<h6 class="deal-title">Giày cho cặp đôi</h6>
 									</div>
 								</a>
 							</div>
@@ -248,7 +246,7 @@
 								<img class="img-fluid w-100" src="img/category/c4.jpg" alt="">
 								<a href="img/category/c4.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Sneaker for Sports</h6>
+										<h6 class="deal-title">Dép</h6>
 									</div>
 								</a>
 							</div>
@@ -261,7 +259,7 @@
 						<img class="img-fluid w-100" src="img/category/c5.jpg" alt="">
 						<a href="img/category/c5.jpg" class="img-pop-up" target="_blank">
 							<div class="deal-details">
-								<h6 class="deal-title">Sneaker for Sports</h6>
+								<h6 class="deal-title">Giày bóng rổ</h6>
 							</div>
 						</a>
 					</div>
@@ -279,10 +277,8 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
-							<h1>Latest Products</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua.</p>
+							<h1>Sản phẩm mới nhất</h1>
+							<p>Các sản phẩm mới nhất </p>
 						</div>
 					</div>
 				</div>
@@ -292,8 +288,7 @@
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p1.jpg" alt="">
 							<div class="product-details">
-								<h6>addidas New Hammer sole
-									for Sports person</h6>
+								<h6>Addidas </h6>
 								<div class="price">
 									<h6>$150.00</h6>
 									<h6 class="l-through">$210.00</h6>
@@ -302,19 +297,19 @@
 
 									<a href="" class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">add to bag</p>
+										<p class="hover-text">Thêm vào giỏ hàng</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-heart"></span>
-										<p class="hover-text">Wishlist</p>
+										<p class="hover-text">Danh sách mong muốn</p>
 									</a>
 									<a href="" class="social-info">
 										<span class="lnr lnr-sync"></span>
-										<p class="hover-text">compare</p>
+										<p class="hover-text">So sánh</p>
 									</a>
-									<a href="" class="social-info">
+									<a href="./single-product.php" class="social-info">
 										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
+										<p class="hover-text">Xem thêm</p>
 									</a>
 								</div>
 							</div>
@@ -559,7 +554,7 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
-							<h1>Coming Products</h1>
+							<h1>Các sản phẩm sắp được ra mắt</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 								dolore
 								magna aliqua.</p>
@@ -844,13 +839,13 @@
 				<div class="col-lg-6 no-padding exclusive-left">
 					<div class="row clock_sec clockdiv" id="clockdiv">
 						<div class="col-lg-12">
-							<h1>Exclusive Hot Deal Ends Soon!</h1>
-							<p>Who are in extremely love with eco friendly system.</p>
+							<h1>Ưu đãi độc quyền sắp sớm kết thúc</h1>
+							<p>Những người cực kì yêu quý môi trường.</p>
 						</div>
 						<div class="col-lg-12">
 							<div class="row clock-wrap">
 								<div class="col clockinner1 clockinner">
-									<h1 class="days">150</h1>
+									<h1 class="days">10</h1>
 									<span class="smalltext">Days</span>
 								</div>
 								<div class="col clockinner clockinner1">
@@ -868,7 +863,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="" class="primary-btn">Shop Now</a>
+					<a href="" class="primary-btn">Mua ngay</a>
 				</div>
 				<div class="col-lg-6 no-padding exclusive-right">
 					<div class="active-exclusive-product-slider">
@@ -941,9 +936,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Deals of the Week</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua.</p>
+						<h1>Ưu đãi trong tuần</h1>
+						<p>Mỗi tuần chúng tôi sẽ tạo ưu đãi cho khách hàng trên một số sản phẩm ngẫu nhiên. Chúc bạn may mắn !</p>
 					</div>
 				</div>
 			</div>
@@ -1078,7 +1072,7 @@
 			<div class="row">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Us</h6>
+						<h6>Về chúng tôi</h6>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
 							magna aliqua.
@@ -1087,8 +1081,8 @@
 				</div>
 				<div class="col-lg-4  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
+						<h6>Đăng ký</h6>
+						<p>Đừng bỏ lỡ các sản phẩm mới nhất của chúng tôi. Nhận thông báo mỗi khi sản phẩm mới được lên kệ</p>
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -1116,7 +1110,7 @@
 				</div>
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">Instragram Feed</h6>
+						<h6 class="mb-20">Instagram</h6>
 						<ul class="instafeed d-flex flex-wrap">
 							<li><img src="img/i1.jpg" alt=""></li>
 							<li><img src="img/i2.jpg" alt=""></li>
@@ -1131,8 +1125,8 @@
 				</div>
 				<div class="col-lg-2 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Follow Us</h6>
-						<p>Let us be social</p>
+						<h6>Theo dõi chúng tôi</h6>
+						<p>Các nền tảng mạng xã hội chúng tôi sử dụng</p>
 						<div class="footer-social d-flex align-items-center">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
@@ -1144,7 +1138,7 @@
 			</div>
 			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
 				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
 			</div>

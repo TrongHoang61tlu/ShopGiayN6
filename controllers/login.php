@@ -12,25 +12,22 @@
 
 
     // Bước 02: Xử lý truy vấn
-    $sql = "SELECT * FROM khach WHERE email='$email'";
+    $sql = "SELECT * FROM khach WHERE Emailkh='$email'";
     $result = mysqli_query($conn,$sql);
-    $password2  =   md5($password);
+    $password2  =   md5($password);    
+
     if(mysqli_num_rows($result) > 0){
         // Lấy mật khẩu ra
         $row=mysqli_fetch_assoc($result);
-        $pass_hash = $row['password'];
+        $pass_hash = $row['Passwordkh'];
         $activated = $row['activated'];
-		$permission = $row['permission'];
-		$name 		= $row['name'];
-        $templates = $row['templates'];
+		$name 		= $row['TenKh'];
         if($activated ==1){
         
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
-				$_SESSION['id'] = $row['id'];
-                $_SESSION['level'] = $row['permission'];
-                $_SESSION['template'] = $row['templates'];
+				$_SESSION['MaKh'] = $row['MaKh'];
 
             
             }else{
