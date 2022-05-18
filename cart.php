@@ -48,16 +48,16 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Trang chủ</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category.php">Danh mục</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-product.php">Chi tiết sản phẩm</a></li>
-									<li class="nav-item"><a class="nav-link" href="checkout.php">Kiểm tra sản phẩm</a></li>
-									<li class="nav-item active"><a class="nav-link" href="cart.php">Giỏ hàng</a></li>
-									<li class="nav-item"><a class="nav-link" href="confirmation.php">Xác nhận</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.php">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-product.php">Product Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="checkout.php">Product Checkout</a></li>
+									<li class="nav-item active"><a class="nav-link" href="cart.php">Shopping Cart</a></li>
+									<li class="nav-item"><a class="nav-link" href="confirmation.php">Confirmation</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -65,19 +65,19 @@
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.php">Chi tiết blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
+									<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
 									<li class="nav-item"><a class="nav-link" href="tracking.php">Tracking</a></li>
 									<li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.php">Liên hệ</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
@@ -106,10 +106,10 @@
         <div class="container">
             <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
                 <div class="col-first">
-                    <h1>Giỏ hàng</h1>
+                    <h1>Shopping Cart</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index.php">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="category.php">Giỏ hàng</a>
+                        <a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category.php">Cart</a>
                     </nav>
                 </div>
             </div>
@@ -125,10 +125,10 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">Sản phẩm</th>
-                                <th scope="col">Giá</th>
-                                <th scope="col">Số lượng</th>
-                                <th scope="col">Tổng</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -136,10 +136,10 @@
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/product/p2.jpg" alt="">
+                                            <img src="img/cart.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <p>ADIDAS New Hammer sole</p>
+                                            <p>Minimalistic shop for multipurpose use</p>
                                         </div>
                                     </div>
                                 </td>
@@ -164,10 +164,10 @@
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/product/p2.jpg" alt="">
+                                            <img src="img/cart.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <p>ADIDAS New Hammer sole</p>
+                                            <p>Minimalistic shop for multipurpose use</p>
                                         </div>
                                     </div>
                                 </td>
@@ -192,10 +192,10 @@
                                 <td>
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/product/p2.jpg" alt="">
+                                            <img src="img/cart.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <p>ADIDAS New Hammer sole</p>
+                                            <p>Minimalistic shop for multipurpose use</p>
                                         </div>
                                     </div>
                                 </td>
@@ -242,7 +242,7 @@
 
                                 </td>
                                 <td>
-                                    <h5>Tổng tiền: </h5>
+                                    <h5>Subtotal</h5>
                                 </td>
                                 <td>
                                     <h5>$2160.00</h5>
@@ -261,10 +261,10 @@
                                 <td>
                                     <div class="shipping_box">
                                         <ul class="list">
-                                            <li><a href="#">Giảm mặc định: $5.00</a></li>
-                                            <li><a href="#">Miễn phí ship</a></li>
+                                            <li><a href="#">Flat Rate: $5.00</a></li>
+                                            <li><a href="#">Free Shipping</a></li>
                                             <li><a href="#">Flat Rate: $10.00</a></li>
-                                            <li class="active"><a href="#">Giao hàng tận nơi: $2.00</a></li>
+                                            <li class="active"><a href="#">Local Delivery: $2.00</a></li>
                                         </ul>
                                         <h6>Calculate Shipping <i class="fa fa-caret-down" aria-hidden="true"></i></h6>
                                         <select class="shipping_select">
@@ -294,8 +294,8 @@
                                 </td>
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
-                                        <a class="gray_btn" href="#">Tiếp tục mua sắm</a>
-                                        <a class="primary-btn" href="#">Tiến hành kiểm tra</a>
+                                        <a class="gray_btn" href="#">Continue Shopping</a>
+                                        <a class="primary-btn" href="#">Proceed to checkout</a>
                                     </div>
                                 </td>
                             </tr>
@@ -313,17 +313,18 @@
             <div class="row">
                 <div class="col-lg-3  col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h6>Về chúng tôi</h6>
+                        <h6>About Us</h6>
                         <p>
-                            Thành lập vào những năm 2016,đến hiện tại chúng tôi đã có 2 chi nhánh tại Hà Nội và TPHCM.
-                            Karma Shop chúng tôi luôn muốn khách hàng có trải nghiệm tốt nhất !
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore dolore
+                            magna aliqua.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-4  col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h6>Đăng kí</h6>
-                        <p>Đừng bỏ lỡ các sản phẩm mới nhất của chúng tôi .Nhận thông báo mỗi khi sản phẩm mới được lên kệ</p>
+                        <h6>Newsletter</h6>
+                        <p>Stay update with our latest</p>
                         <div class="" id="mc_embed_signup">
 
                             <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -368,8 +369,8 @@
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h6>Theo dõi chúng tôi</h6>
-                        <p>Các nền tảng mạng xã hội chúng tôi sử dụng</p>
+                        <h6>Follow Us</h6>
+                        <p>Let us be social</p>
                         <div class="footer-social d-flex align-items-center">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>

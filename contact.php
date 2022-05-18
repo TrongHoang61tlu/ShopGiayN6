@@ -47,17 +47,17 @@
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+					<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.php">Trang chủ</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category.php">Shop Category</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-product.php">Product Details</a></li>
-									<li class="nav-item"><a class="nav-link" href="checkout.php">Product Checkout</a></li>
-									<li class="nav-item"><a class="nav-link" href="cart.php">Shopping Cart</a></li>
-									<li class="nav-item"><a class="nav-link" href="confirmation.php">Confirmation</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.php">Danh mục</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-product.php">Chi tiết sản phẩm</a></li>
+									<li class="nav-item"><a class="nav-link" href="checkout.php">Kiểm tra sản phẩm</a></li>
+									<li class="nav-item"><a class="nav-link" href="cart.php">Giỏ hàng</a></li>
+									<li class="nav-item"><a class="nav-link" href="confirmation.php">Xác nhận</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -65,19 +65,19 @@
 								 aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.php">Chi tiết blog</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="tracking.php">Tracking</a></li>
-									<li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
+									<li class="nav-item"><a class="nav-link" href="tracking.php">Theo dõi đơn hàng</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements.php">Yếu tố</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="contact.php">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.php">Liên hệ</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
@@ -106,10 +106,10 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Contact Us</h1>
+					<h1>Hãy Liên hệ với chúng tôi</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.php">Contact</a>
+						<a href="index.php">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.php">Liên hệ</a>
 					</nav>
 				</div>
 			</div>
@@ -128,18 +128,18 @@
 					<div class="contact_info">
 						<div class="info_item">
 							<i class="lnr lnr-home"></i>
-							<h6>California, United States</h6>
-							<p>Santa monica bullevard</p>
+							<h6>Hà Nội, Việt Nam</h6>
+							<p>175 Tây Sơn</p>
 						</div>
 						<div class="info_item">
 							<i class="lnr lnr-phone-handset"></i>
-							<h6><a href="#">00 (440) 9865 562</a></h6>
-							<p>Mon to Fri 9am to 6 pm</p>
+							<h6><a href="#">097-486-5674</a></h6>
+							<p>6:00 - 21:00 Từ Thứ 2 -> Thứ 6</p>
 						</div>
 						<div class="info_item">
 							<i class="lnr lnr-envelope"></i>
-							<h6><a href="#">support@colorlib.com</a></h6>
-							<p>Send us your query anytime!</p>
+							<h6><a href="#">karmashop@gmail.com</a></h6>
+							<p>Gửi yêu cầu của bạn bất cứ lúc nào !</p>
 						</div>
 					</div>
 				</div>
@@ -147,22 +147,22 @@
 					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Tên" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'">
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Chủ đề" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"></textarea>
+								<textarea class="form-control" name="message" id="message" rows="1" placeholder="Phản hồi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12 text-right">
-							<button type="submit" value="submit" class="primary-btn">Send Message</button>
+							<button type="submit" value="submit" class="primary-btn">Gửi yêu cầu</button>
 						</div>
 					</form>
 				</div>
@@ -177,17 +177,16 @@
 			<div class="row">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Us</h6>
+						<h6>Về chúng tôi</h6>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-							magna aliqua.
+							Thành lập vào những năm 2016, đến hiện tại chúng tôi đã có 2 chi nhánh tại Hà Nội và TPHCM. Karma Shop chúng tôi luôn muốn khách hàng có trải nghiệm tốt nhất !
 						</p>
 					</div>
 				</div>
 				<div class="col-lg-4  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
+						<h6>Đăng ký</h6>
+						<p>Đừng bỏ lỡ các sản phẩm mới nhất của chúng tôi. Nhận thông báo mỗi khi sản phẩm mới được lên kệ</p>
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -205,8 +204,8 @@
 									</div>
 
 									<!-- <div class="col-lg-4 col-md-4">
-													<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-												</div>  -->
+												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
+											</div>  -->
 								</div>
 								<div class="info"></div>
 							</form>
@@ -215,7 +214,7 @@
 				</div>
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">Instragram Feed</h6>
+						<h6 class="mb-20">Instagram</h6>
 						<ul class="instafeed d-flex flex-wrap">
 							<li><img src="img/i1.jpg" alt=""></li>
 							<li><img src="img/i2.jpg" alt=""></li>
@@ -230,8 +229,8 @@
 				</div>
 				<div class="col-lg-2 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Follow Us</h6>
-						<p>Let us be social</p>
+						<h6>Theo dõi chúng tôi</h6>
+						<p>Các nền tảng mạng xã hội chúng tôi sử dụng</p>
 						<div class="footer-social d-flex align-items-center">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
@@ -243,7 +242,7 @@
 			</div>
 			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
 				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
 			</div>
