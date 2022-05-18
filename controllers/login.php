@@ -28,7 +28,7 @@
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
 				$_SESSION['MaKh'] = $row['MaKh'];
-
+                echo "<meta http-equiv='refresh' content='0;url=../'>";
             
             }else{
                 echo "Kiểm tra lại Mật khẩu";
@@ -40,6 +40,5 @@
         echo "Email không tồn tại";
     }
 }
-
 
 ?>
