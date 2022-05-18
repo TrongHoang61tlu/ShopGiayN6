@@ -295,10 +295,10 @@
                             <div class="col-md-3">
                                 <div class="blog_info text-right">
                                     <div class="post_tag">
-                                        <a class="active">Thực phẩm,</a>
-                                        <a href="#" href="#">Công nghệ,</a>
+                                        <a href="#">Thực phẩm,</a>
+                                        <a href="#">Công nghệ,</a>
                                         <a href="#">Chính trị,</a>
-                                        <a href="#">Đời sống</a>
+                                        <a class="active" href="#">Đời sống</a>
                                     </div>
                                     <ul class="blog_meta list">
                                         <li><a href="#">Hoàng<i class="lnr lnr-user"></i></a></li>
