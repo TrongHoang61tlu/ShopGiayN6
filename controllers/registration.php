@@ -61,7 +61,7 @@
                 $mail->Host = 'smtp.gmail.com';// Set the SMTP server to send through
                 $mail->SMTPAuth = true;// Enable SMTP authentication
                 $mail->Username = 'tronghoang19112001@gmail.com';// SMTP username
-                $mail->Password = 'gupuyuwdsiaekxue'; // SMTP password
+                $mail->Password = 'TranThiYen1901'; // SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;// Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
                 $mail->Port = 587; // TCP port to connect to
                 $mail->CharSet = 'UTF-8';
@@ -84,7 +84,7 @@
                 // Mail body content 
                 $bodyContent = '<p>Bạn đã đăng ký thành công</b></h1>'; 
                 $bodyContent .= '<p> Để kích hoạt tài khoản bạn vui lòng click vào đường link bên dưới </p>';
-                $bodyContent .= "<p><a href = 'https://fblogwebkhn.lovestoblog.com/controllers/activate.php?varkey=$varkey'>Click here</a></p>"; 
+                $bodyContent .= "<p><a href = 'http://localhost:8080/ShopGiayN6/controllers/active.php?varkey=$varkey'>Click here</a></p>"; 
                 $mail->Body = $bodyContent;
                 // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
                 if($mail->send()){
