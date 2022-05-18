@@ -143,20 +143,20 @@ if (!isset($_SESSION["TenKH"]))
 						<h3>Faded SkyBlu Denim Jeans</h3>
 						<h2>$149.99</h2>
 						<ul class="list">
-							<li><a class="active" href="#"><span>Category</span> : Household</a></li>
-							<li><a href="#"><span>Availibility</span> : In Stock</a></li>
+							<li><a class="active" href="#"><span>Danh mục:</span> : Household</a></li>
+							<li><a href="#"><span>Khả dụng</span> : In Stock</a></li>
 						</ul>
 						<p>Mill Oil là bộ tản nhiệt đầy dầu cải tiến với công nghệ hiện đại nhất. Nếu bạn đang tìm kiếm
 							thứ gì đó có thể làm cho nội thất của bạn trông tuyệt vời, đồng thời mang lại cho bạn cảm giác ấm áp dễ chịu
 							trong suốt mùa đông.</p>
 						<div class="product_count">
-							<label for="qty">Quantity:</label>
+							<label for="qty">Số lượng:</label>
 							<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp&amp, sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
 						</div>
 						<div class="card_area d-flex align-items-center">
-							<a class="primary-btn" href="./login.php">Add to Cart</a>
+							<a class="primary-btn" href="./login.php">Thêm vào giỏ</a>
 							<a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
 							<a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
 						</div>
@@ -174,9 +174,8 @@ if (!isset($_SESSION["TenKH"]))
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Deals of the Week</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua.</p>
+						<h1>Ưu đãi trong tuần</h1>
+						<p>Mỗi tuần chúng tôi sẽ tạo ưu đãi cho khách hàng trên một số sản phẩm ngẫu nhiên. Chúc bạn may mắn !</p>
 					</div>
 				</div>
 			</div>
@@ -311,7 +310,7 @@ if (!isset($_SESSION["TenKH"]))
 			<div class="row">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Us</h6>
+						<h6>Về chúng tôi!</h6>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
 							magna aliqua.
