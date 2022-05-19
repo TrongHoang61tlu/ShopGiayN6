@@ -1,4 +1,5 @@
 <?php
+    session_start();
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
@@ -32,8 +33,8 @@
     $sql_1 = "SELECT * FROM khach WHERE Emailkh='$email'";
     $result_1 = mysqli_query($conn,$sql_1);
     if(mysqli_num_rows($result_1) > 0){
-        $value='failed';
-        header("Location:../registration.php?reply=$value");
+        $_SESSION['error2'] = 'Email đã tồn tại!';
+                header("location: ../registration.php");
     }else{
         $username = $conn -> real_escape_string($username);
         $email = $conn -> real_escape_string($email);
@@ -49,7 +50,7 @@
         $result_2 = mysqli_query($conn,$sql_2);  //Đối với lệnh INSERT, nếu CHÈN THÀNH CÔNG, nó trả về số NGUYÊN
 
         if($result_2>0){
-            $_SESSION['error2'] = 'Email không tồn tại!';
+            $_SESSION['error2'] = 'Tạo tài khoản thành công';
                 header("location: ../registration.php");
 
             $mail = new PHPMailer(true);
