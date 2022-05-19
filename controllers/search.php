@@ -8,7 +8,7 @@ if(isset($_POST['handleSearch'])) {
 
     $searchResult = mysqli_fetch_assoc($result);
 
-    echo $searchResult[header("location: ../single-product.php")];
+    echo $searchResult["TenHang"];
     
 
 } else {
