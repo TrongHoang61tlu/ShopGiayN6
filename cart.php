@@ -260,7 +260,7 @@ include('./config/config.php');
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
                                         <a class="gray_btn" href="#">Tiếp tục mua sắm</a>
-                                        <a class="primary-btn" href="#">Tiến hành kiểm tra</a>
+                                        <a class="primary-btn" href="./checkout.php">Thanh Toán</a>
                                     </div>
                                 </td>
                             </tr>
