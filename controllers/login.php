@@ -35,10 +35,12 @@
                 header("location: ../login.php");
             }
             }else{
-                echo "Tài khoản của bạn chưa được kích hoạt. Vui lòng đăng nhập gmail để kích hoạt tài khoản !";
+                $_SESSION['error'] = 'Tài khoản của bạn chưa được kích hoạt. Vui lòng đăng nhập gmail để kích hoạt tài khoản !';
+                header("location: ../login.php");
             }
     }else{
-        echo "Email không tồn tại";
+                $_SESSION['error'] = 'Email không tồn tại!';
+                header("location: ../login.php");
     }
 }
 

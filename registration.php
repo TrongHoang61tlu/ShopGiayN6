@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -134,6 +137,14 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>Đăng ký</h3>
+						<b>
+							<?php
+								$message = isset($_SESSION['error2']) ? $_SESSION['error2'] : '';
+								echo $message;
+								unset($_SESSION['error2'])
+
+							?>
+						</b>
 						<form action="./controllers/registration.php" method="POST">   
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">

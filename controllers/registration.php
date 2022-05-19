@@ -49,8 +49,8 @@
         $result_2 = mysqli_query($conn,$sql_2);  //Đối với lệnh INSERT, nếu CHÈN THÀNH CÔNG, nó trả về số NGUYÊN
 
         if($result_2>0){
-            $value='successfully';
-            header("Location:../registration.php?reply=$value");
+            $_SESSION['error2'] = 'Email không tồn tại!';
+                header("location: ../registration.php");
 
             $mail = new PHPMailer(true);
 
