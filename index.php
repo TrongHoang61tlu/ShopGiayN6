@@ -91,11 +91,13 @@
 				</div>
 			</nav>
 		</div>
+		<!-- <a href="./search.php">click</a> -->
 		<div class="search_input" id="search_input_box">
 			<div class="container">
-				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search_input" placeholder="Tìm kiếm">
-					<button type="submit" class="btn"></button>
+				<form class="d-flex justify-content-between" action="./controllers/search.php" method="POST">
+					
+					<input type="text" class="form-control" id="search_input" placeholder="Tìm kiếm" name="search">
+					<button type="submit" class="btn" name="handleSearch"></button>
 					<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
 				</form>
 			</div>

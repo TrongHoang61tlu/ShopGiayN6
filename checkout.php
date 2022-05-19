@@ -126,9 +126,9 @@
                 </div>
                 <p>Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập thông tin chi tiết của bạn vào ô bên dưới. Nếu bạn là người mới
                     khách hàng, vui lòng chuyển đến phần Thanh toán & Giao hàng.</p>
-                <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                    <form class="row login_form" action="./controllers/login.php" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6 form-group p_star">
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="text" class="form-control" id="email" name="email">
                         <span class="placeholder" data-placeholder="Username or Email"></span>
                     </div>
                     <div class="col-md-6 form-group p_star">
@@ -178,9 +178,9 @@
                             </div>
                             <div class="col-md-12 form-group p_star">
                                 <select class="country_select">
-                                    <option value="1">Country</option>
-                                    <option value="2">Country</option>
-                                    <option value="4">Country</option>
+                                    <option value="1">Việt Nam</option>
+                                    <option value="2">Việt Nam</option>
+                                    <option value="4">Việt Nam</option>
                                 </select>
                             </div>
                             <div class="col-md-12 form-group p_star">

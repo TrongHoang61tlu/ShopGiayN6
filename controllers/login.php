@@ -28,10 +28,11 @@
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
 				$_SESSION['MaKh'] = $row['MaKh'];
-                echo "<meta http-equiv='refresh' content='0;url=../'>";
+                header("location: ../cart.php");
             
             }else{
-                echo "Kiểm tra lại Mật khẩu";
+                $_SESSION['error'] = 'Kiểm tra lại Mật khẩu';
+                header("location: ../login.php");
             }
             }else{
                 echo "Tài khoản của bạn chưa được kích hoạt. Vui lòng đăng nhập gmail để kích hoạt tài khoản !";

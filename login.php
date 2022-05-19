@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -134,6 +137,14 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>Đăng nhập</h3>
+						<b>
+							<?php
+								$message = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+								echo $message;
+								unset($_SESSION['error'])
+
+							?>
+						</b>
 						<form class="row login_form" action="./controllers/login.php" method="post" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">

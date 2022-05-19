@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION["TenKH"]))
+if (!isset($_SESSION["MaKh"]))
 
 	header("location:login.php");
 ?>
