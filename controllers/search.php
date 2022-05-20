@@ -6,13 +6,13 @@ if(isset($_POST['handleSearch'])) {
     $sql = "select TenHang from hang where TenHang like '%$search%'";
     $result = mysqli_query($conn,$sql);
 
-    $searchResult = mysqli_fetch_assoc($result);
-
-    echo $searchResult["TenHang"];
+    while($row = mysqli_fetch_assoc($result)) {
+        echo $row["TenHang"];
+    }
     
-
 } else {
     header("location: ./index.php");
 }
 
 ?>
+
