@@ -2,7 +2,7 @@
 if(isset($_GET['varkey'])){
     $varkey   = $_GET['varkey'];
 
-    include("./config/config.php");
+    include("../config/config.php");
     
     $resultSet = $conn ->query("SELECT activated,varkey FROM khach WHERE activated = 0 AND varkey = '$varkey' ");
     if($resultSet -> num_rows == 1){

@@ -1,6 +1,10 @@
 <?php
 include('./config/config.php');
 ?>
+<?php
+session_start()
+
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -67,6 +71,14 @@ include('./config/config.php');
                                     <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                                     <li class="nav-item"><a class="nav-link" href="single-blog.php">Chi tiết blog</a></li>
                                 </ul>
+                                <b>
+							<?php
+								$message = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+								echo $message;
+								unset($_SESSION['error'])
+
+							?>
+						</b>
                             </li>
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>

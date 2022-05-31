@@ -259,7 +259,7 @@
                                 <label for="f-option4">Tôi đã đọc và chấp nhận </label>
                                 <a href="#">Điều khoản và điều kiện*</a>
                             </div>
-                            <a class="primary-btn" href="#">Tiếp tục đến Paypal</a>
+                            <a class="primary-btn" href="confirmation.php">Thanh Toán</a>
                         </div>
                     </div>
                 </div>

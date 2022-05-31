@@ -23,6 +23,8 @@
         $activated = $row['activated'];
 		$name 		= $row['TenKh'];
         if($activated ==1){
+            $_SESSION['error'] = 'Đăng nhập thành công';
+                header("location: ../cart.php");
         
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
