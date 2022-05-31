@@ -13,6 +13,3 @@ if(isset($_POST['handleSearch'])) {
 } else {
     header("location: ./index.php");
 }
-
-?>
-
