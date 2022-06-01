@@ -1,11 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION["MaKh"]))
-
-    header("location:login.php");
-$link = new mysqli('localhost', 'root', '', 'shopbangiay', '3308') or die('failed');
-mysqli_query($link, 'SET NAMES UTF8');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,14 +9,14 @@ mysqli_query($link, 'SET NAMES UTF8');
 </head>
 
 <body>
-    <div id="main-contain">
+    <div id="main-contain" class="mt-4">
         <h2>Thêm Đánh Giá</h2>
 
         <div class="form">
             <span style="font-size: 20px; color: red; font-style: italic"><b>Mời nhập thông tin đánh giá : </b> </span> </br>
             (Chú ý điền đủ thông tin)
             </br></br>
-            <form method="post">
+            <form method="post" method="single-product.php?comment=false">
                 <table>
                     <tr>
                         <td>Tiêu Đề :</td>
@@ -40,13 +32,12 @@ mysqli_query($link, 'SET NAMES UTF8');
                         </td>
                     </tr>
                 </table>
-
             </form>
 
 
 
             <?php
-            $link = new mysqli('localhost', 'root', '', 'shopbangiay', '3308') or die('kết nối thất bại ');
+            $link = new mysqli('localhost', 'root', '', 'shopbangiay') or die('kết nối thất bại ');
             mysqli_query($link, 'SET NAMES UTF8');
 
             if (isset($_POST['themdanhgia'])) {
@@ -57,7 +48,7 @@ mysqli_query($link, 'SET NAMES UTF8');
                     $noidung = $_POST['noidung'];
                     $query = "INSERT INTO `tintuc`( `tieude`, `noidung`) VALUES('$tieude','$noidung')";
                     mysqli_query($link, $query) or die("thêm dữ liệu thất bại");
-                    header('location:./single-product.php');
+                    header('location:./single-product.php?comment=false');
                 }
             }
 

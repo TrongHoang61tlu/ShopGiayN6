@@ -3,8 +3,24 @@ session_start();
 if (!isset($_SESSION["MaKh"]))
 
 	header("location:login.php");
-$link = new mysqli('localhost', 'root', '', 'shopbangiay', '3308') or die('failed');
+$link = new mysqli('localhost', 'root', '', 'shopbangiay') or die('failed');
 mysqli_query($link, 'SET NAMES UTF8');
+
+// $link = new mysqli('localhost', 'root', '', 'shopbangiay') or die('kết nối thất bại ');
+// mysqli_query($link, 'SET NAMES UTF8');
+
+if (isset($_POST['themdanhgia'])) {
+	if (empty($_POST['tieude']) or empty($_POST['noidung'])) {
+		echo '</br> <p style="color:red; "> Bạn chưa nhập thông tin đầy đủ ! </p> </br>';
+	} else {
+		$tieude = $_POST['tieude'];
+		$noidung = $_POST['noidung'];
+		$query = "INSERT INTO `tintuc`( `tieude`, `noidung`) VALUES('$tieude','$noidung')";
+		mysqli_query($link, $query) or die("thêm dữ liệu thất bại");
+		header('location:./single-product.php');
+	}
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -38,6 +54,15 @@ mysqli_query($link, 'SET NAMES UTF8');
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+	#form {
+		display: none;
+	}
+
+	#form.active {
+		display: block;
+	}
+</style>
 
 <body>
 
@@ -184,47 +209,74 @@ mysqli_query($link, 'SET NAMES UTF8');
 				<div class="col-lg-9">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-						<table width="600px" padding="5px">
-                            <tr>
-                                <th>Bài đăng</th>
-                                <th>Tiêu đề</th>
-                                <th>Nội dung</th>
-                            </tr>
+							<table width="600px" padding="5px">
+								<tr>
+									<th>Bài đăng</th>
+									<th>Tiêu đề</th>
+									<th>Nội dung</th>
+								</tr>
 
-                            <?php
-                            $query = "SELECT * FROM tintuc";
-                            $result = mysqli_query($link, $query);
-                            if (mysqli_num_rows($result) > 0) {
-                                $i = 0;
-                                while ($r = mysqli_fetch_assoc($result)) {
-                                    $i++;
-                                    $baidang = $r['ID'];
-                                    $tieude = $r['tieude'];
-                                    $noidung = $r['noidung'];
-                                    echo "<tr> ";
-                                    echo "<td>$baidang</td>";
-                                    echo "<td>$tieude</td>";
-                                    echo "<td>$noidung</td>";
-                                }
-                            }
+								<?php
+								$query = "SELECT * FROM tintuc";
+								$result = mysqli_query($link, $query);
+								if (mysqli_num_rows($result) > 0) {
+									$i = 0;
+									while ($r = mysqli_fetch_assoc($result)) {
+										$i++;
+										$baidang = $r['ID'];
+										$tieude = $r['tieude'];
+										$noidung = $r['noidung'];
+										echo "<tr> ";
+										echo "<td>$baidang</td>";
+										echo "<td>$tieude</td>";
+										echo "<td>$noidung</td>";
+									}
+								}
 
-                            ?>
-                        </table>
+								?>
+							</table>
 						</div>
 					</div>
-					<form>
-						<a href="evaluate.php"><input id="" type="button" value="Thêm Đánh Giá"> </a>
-					</form>
-				</div>
-				<div class="col-lg-3">
-					<div class="ctg-right">
-						<a href="#" target="_blank">
-							<img class="img-fluid d-block mx-auto" src="img/category/c5.jpg" alt="">
-						</a>
+
+					<div href="single-product.php?comment=true"><input id="" type="button" value="Thêm Đánh Giá"> </div>
+
+					<div id="form">
+						<span style="font-size: 20px; color: red; font-style: italic"><b>Mời nhập thông tin đánh giá : </b> </span> </br>
+						(Chú ý điền đủ thông tin)
+						</br></br>
+						<form method="post" method="single-product.php?comment=false">
+							<table>
+								<tr>
+									<td>Tiêu Đề :</td>
+									<td> <input type="text" name="tieude"></td>
+								</tr>
+								<tr>
+									<td>Nội dung :</td>
+									<td> <input id="nd" type="text" name="noidung"></td>
+								</tr>
+								<tr>
+									<td colspan=2>
+										<input id="btnChapNhan" type="submit" value="Hoàn tất" name="themdanhgia" />
+									</td>
+								</tr>
+							</table>
+						</form>
+
+
+
+						<?php
+
+						?>
 					</div>
+					<!-- <div class="col-lg-3">
+						<div class="ctg-right">
+							<a href="#" target="_blank">
+								<img class="img-fluid d-block mx-auto" src="img/category/c5.jpg" alt="">
+							</a>
+						</div>
+					</div> -->
 				</div>
 			</div>
-		</div>
 	</section>
 	<!-- End related-product Area -->
 
@@ -322,7 +374,14 @@ mysqli_query($link, 'SET NAMES UTF8');
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		const btn = document.querySelector('input[type=button]')
+		const form = document.getElementById('form')
 
+		btn.onclick = function() {
+			form.classList.toggle('active')
+		}
+	</script>
 </body>
 
 </html>
