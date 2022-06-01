@@ -3,6 +3,8 @@ session_start();
 if (!isset($_SESSION["MaKh"]))
 
 	header("location:login.php");
+$link = new mysqli('localhost', 'root', '', 'shopbangiay', '3308') or die('failed');
+mysqli_query($link, 'SET NAMES UTF8');
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -174,8 +176,7 @@ if (!isset($_SESSION["MaKh"]))
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Ưu đãi trong tuần</h1>
-						<p>Mỗi tuần chúng tôi sẽ tạo ưu đãi cho khách hàng trên một số sản phẩm ngẫu nhiên. Chúc bạn may mắn !</p>
+						<h1>Đánh giá sản phẩm</h1>
 					</div>
 				</div>
 			</div>
@@ -183,114 +184,37 @@ if (!isset($_SESSION["MaKh"]))
 				<div class="col-lg-9">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r1.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r2.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r3.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r5.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r6.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r7.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r9.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r10.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r11.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
+						<table width="600px" padding="5px">
+                            <tr>
+                                <th>Bài đăng</th>
+                                <th>Tiêu đề</th>
+                                <th>Nội dung</th>
+                            </tr>
+
+                            <?php
+                            $query = "SELECT * FROM tintuc";
+                            $result = mysqli_query($link, $query);
+                            if (mysqli_num_rows($result) > 0) {
+                                $i = 0;
+                                while ($r = mysqli_fetch_assoc($result)) {
+                                    $i++;
+                                    $baidang = $r['ID'];
+                                    $tieude = $r['tieude'];
+                                    $noidung = $r['noidung'];
+                                    echo "<tr> ";
+                                    echo "<td>$baidang</td>";
+                                    echo "<td>$tieude</td>";
+                                    echo "<td>$noidung</td>";
+                                }
+                            }
+
+                            ?>
+                        </table>
 						</div>
 					</div>
+					<form>
+						<a href="evaluate.php"><input id="" type="button" value="Thêm Đánh Giá"> </a>
+					</form>
 				</div>
 				<div class="col-lg-3">
 					<div class="ctg-right">
