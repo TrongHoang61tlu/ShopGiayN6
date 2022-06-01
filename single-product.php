@@ -3,6 +3,24 @@ session_start();
 if (!isset($_SESSION["MaKh"]))
 
 	header("location:login.php");
+$link = new mysqli('localhost', 'root', '', 'shopbangiay') or die('failed');
+mysqli_query($link, 'SET NAMES UTF8');
+
+// $link = new mysqli('localhost', 'root', '', 'shopbangiay') or die('kết nối thất bại ');
+// mysqli_query($link, 'SET NAMES UTF8');
+
+if (isset($_POST['themdanhgia'])) {
+	if (empty($_POST['tieude']) or empty($_POST['noidung'])) {
+		echo '</br> <p style="color:red; "> Bạn chưa nhập thông tin đầy đủ ! </p> </br>';
+	} else {
+		$tieude = $_POST['tieude'];
+		$noidung = $_POST['noidung'];
+		$query = "INSERT INTO `tintuc`( `tieude`, `noidung`) VALUES('$tieude','$noidung')";
+		mysqli_query($link, $query) or die("thêm dữ liệu thất bại");
+		header('location:./single-product.php');
+	}
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
@@ -36,6 +54,15 @@ if (!isset($_SESSION["MaKh"]))
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+	#form {
+		display: none;
+	}
+
+	#form.active {
+		display: block;
+	}
+</style>
 
 <body>
 
@@ -174,8 +201,7 @@ if (!isset($_SESSION["MaKh"]))
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Ưu đãi trong tuần</h1>
-						<p>Mỗi tuần chúng tôi sẽ tạo ưu đãi cho khách hàng trên một số sản phẩm ngẫu nhiên. Chúc bạn may mắn !</p>
+						<h1>Đánh giá sản phẩm</h1>
 					</div>
 				</div>
 			</div>
@@ -183,124 +209,74 @@ if (!isset($_SESSION["MaKh"]))
 				<div class="col-lg-9">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r1.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r2.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r3.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r5.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r6.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r7.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r9.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r10.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-related-product d-flex">
-								<a href="#"><img src="img/r11.jpg" alt=""></a>
-								<div class="desc">
-									<a href="#" class="title">Black lace Heels</a>
-									<div class="price">
-										<h6>$189.00</h6>
-										<h6 class="l-through">$210.00</h6>
-									</div>
-								</div>
-							</div>
+							<table width="600px" padding="5px">
+								<tr>
+									<th>Bài đăng</th>
+									<th>Tiêu đề</th>
+									<th>Nội dung</th>
+								</tr>
+
+								<?php
+								$query = "SELECT * FROM tintuc";
+								$result = mysqli_query($link, $query);
+								if (mysqli_num_rows($result) > 0) {
+									$i = 0;
+									while ($r = mysqli_fetch_assoc($result)) {
+										$i++;
+										$baidang = $r['ID'];
+										$tieude = $r['tieude'];
+										$noidung = $r['noidung'];
+										echo "<tr> ";
+										echo "<td>$baidang</td>";
+										echo "<td>$tieude</td>";
+										echo "<td>$noidung</td>";
+									}
+								}
+
+								?>
+							</table>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="ctg-right">
-						<a href="#" target="_blank">
-							<img class="img-fluid d-block mx-auto" src="img/category/c5.jpg" alt="">
-						</a>
+
+					<div href="single-product.php?comment=true"><input id="" type="button" value="Thêm Đánh Giá"> </div>
+
+					<div id="form">
+						<span style="font-size: 20px; color: red; font-style: italic"><b>Mời nhập thông tin đánh giá : </b> </span> </br>
+						(Chú ý điền đủ thông tin)
+						</br></br>
+						<form method="post" method="single-product.php?comment=false">
+							<table>
+								<tr>
+									<td>Tiêu Đề :</td>
+									<td> <input type="text" name="tieude"></td>
+								</tr>
+								<tr>
+									<td>Nội dung :</td>
+									<td> <input id="nd" type="text" name="noidung"></td>
+								</tr>
+								<tr>
+									<td colspan=2>
+										<input id="btnChapNhan" type="submit" value="Hoàn tất" name="themdanhgia" />
+									</td>
+								</tr>
+							</table>
+						</form>
+
+
+
+						<?php
+
+						?>
 					</div>
+					<!-- <div class="col-lg-3">
+						<div class="ctg-right">
+							<a href="#" target="_blank">
+								<img class="img-fluid d-block mx-auto" src="img/category/c5.jpg" alt="">
+							</a>
+						</div>
+					</div> -->
 				</div>
 			</div>
-		</div>
 	</section>
 	<!-- End related-product Area -->
 
@@ -398,7 +374,14 @@ if (!isset($_SESSION["MaKh"]))
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		const btn = document.querySelector('input[type=button]')
+		const form = document.getElementById('form')
 
+		btn.onclick = function() {
+			form.classList.toggle('active')
+		}
+	</script>
 </body>
 
 </html>

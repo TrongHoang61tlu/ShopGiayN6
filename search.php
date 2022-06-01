@@ -120,12 +120,30 @@
                     while ($row = $result->fetch_assoc()) { ?>
                         <div class="col-sm-6 col-md-6 wowload fadeInUp">
                             <div class="rooms">
+<<<<<<< HEAD
                                 <img src="product" class=" img-responsive">
                                 <div class="info">
                                     <h3><?php echo $row['TenHang'] ?></h3>
                                     <p class="content"><?php echo $row['TenHang'] ?></p>
                                    <a>Xem chi tiết</a>
                                 </div>
+=======
+                                <?php if ($row['MaHang'] == 3) {
+                                ?>
+                                    <img src="./img/product/p1.jpg" class=" img-responsive">
+                                    <div class="info">
+                                        <h3><?php echo $row['TenHang'] ?></h3>
+                                        <p class="content"><?php echo $row['TenHang'] ?> </p><a href="room-details.php?id=<?php echo $row['productId'] ?>" class="btn btn-default">Xem chi tiết</a>
+                                    </div>
+                                <?php
+                                } else { ?>
+                                    <img src="./img/product/p2.jpg" class=" img-responsive">
+                                    <div class="info">
+                                        <h3><?php echo $row['TenHang'] ?></h3>
+                                        <p class="content"><?php echo $row['TenHang'] ?> </p><a href="room-details.php?id=<?php echo $row['productId'] ?>" class="btn btn-default">Xem chi tiết</a>
+                                    </div>
+                                <?php } ?>
+>>>>>>> f774dba256924372bc20f2aab224ab14098af82c
                             </div>
                         </div>
                     <?php } ?>
