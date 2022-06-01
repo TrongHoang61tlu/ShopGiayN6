@@ -2,8 +2,8 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 01, 2022 lúc 08:20 AM
+-- Máy chủ: 127.0.0.1:3308
+-- Thời gian đã tạo: Th6 01, 2022 lúc 06:24 PM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -130,6 +130,27 @@ CREATE TABLE `nhanvien` (
   `MaCV` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `tintuc`
+--
+
+CREATE TABLE `tintuc` (
+  `ID` int(11) NOT NULL,
+  `tieude` varchar(255) NOT NULL,
+  `noidung` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `tintuc`
+--
+
+INSERT INTO `tintuc` (`ID`, `tieude`, `noidung`) VALUES
+(1, 'review', 'sản phẩm tốt'),
+(2, 'review', 'đáng tiền'),
+(4, 'review', 'sản phẩm rất rẻ');
+
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -169,6 +190,12 @@ ALTER TABLE `nhanvien`
   ADD KEY `MaCV` (`MaCV`);
 
 --
+-- Chỉ mục cho bảng `tintuc`
+--
+ALTER TABLE `tintuc`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -201,6 +228,12 @@ ALTER TABLE `luongnv`
 --
 ALTER TABLE `nhanvien`
   MODIFY `MaNV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- AUTO_INCREMENT cho bảng `tintuc`
+--
+ALTER TABLE `tintuc`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
