@@ -123,7 +123,8 @@
                                 <img src="product" class=" img-responsive">
                                 <div class="info">
                                     <h3><?php echo $row['TenHang'] ?></h3>
-                                    <p class="content"><?php echo $row['TenHang'] ?> </p><a href="room-details.php?id=<?php echo $row['productId'] ?>" class="btn btn-default">Xem chi tiết</a>
+                                    <p class="content"><?php echo $row['TenHang'] ?></p>
+                                   <a>Xem chi tiết</a>
                                 </div>
                             </div>
                         </div>

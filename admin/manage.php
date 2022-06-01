@@ -126,7 +126,7 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.php"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php"
                                 aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
                                 <span class="hide-menu">Trang chủ</span>
@@ -144,6 +144,13 @@
                                 aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-menu">Quản lý nhân viên</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product.php"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">Quản lý sản phẩm</span>
                             </a>
                         </li>
                     </ul>
@@ -243,9 +250,8 @@
                                                     }
                                                 ?>
                                             </td>
-                                                <td><a href="update_member.php?MaNV=<?php echo $row['MaNV']; ?>"></i>Sửa</a></td>
-                                                <td><button onclick="alert(confirm('Vui lòng xác nhận'))"><a href="delete_member.php?MaNV=<?php echo $row['MaNV']; ?>"><i class="fas fa-trash-alt"></i>Xóa</a></button></td>
-                                            
+                                                <td><button><a href="update_member.php?MaNV=<?php echo $row['MaNV']; ?>"></i>Sửa</a></button></td>
+                                                <td><button onclick="alert(confirm('Vui lòng xác nhận'))"><a href="delete_member.php?MaNV=<?php echo $row['MaNV']; ?>">Xóa</a></button></td>
                                             </tr>
                                     <?php
                                             $i++;
