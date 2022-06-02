@@ -163,7 +163,7 @@
             </div>
             <input type="hidden" name="SoHD" class="form-control" id= "SoHD" value="<?php echo $row['SoHD']; ?>">
             <button type="submit" class="btn btn-primary mt-3 mb-4" name="submit">Lưu</button>
-            <button><a href="./index.php" class="btn btn-danger">Quay Lại</a> </button>
+            <button class="btn btn-success mb-2 "><a href="index.php" class="text-white">Quay Lại</a></button>
         </form>
         <?php } ?>
 

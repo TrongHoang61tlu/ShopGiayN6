@@ -71,13 +71,7 @@ session_start()
                                     <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                                     <li class="nav-item"><a class="nav-link" href="single-blog.php">Chi tiết blog</a></li>
                                 </ul>
-                                <b>
-							<?php
-								$message = isset($_SESSION['error']) ? $_SESSION['error'] : '';
-								echo $message;
-								unset($_SESSION['error'])
-
-							?>
+                               
 						</b>
                             </li>
                             <li class="nav-item submenu dropdown">
@@ -121,7 +115,17 @@ session_start()
                     <nav class="d-flex align-items-center">
                         <a href="index.php">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
                         <a href="category.php">Giỏ hàng</a>
+                        
                     </nav>
+                    <a>
+							<?php
+								$message = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+								echo $message;
+								unset($_SESSION['error'])
+
+							?>
+						</a>
+                    
                 </div>
             </div>
         </div>

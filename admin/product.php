@@ -246,8 +246,40 @@
                                                     }
                                                 ?>
                                             </td>
-                                            <td><button><a href="update_.php?SoHD=<?php echo $row['SoHD']; ?>"></i>Sửa</a></button></td>
-                                            <td><button onclick="alert(confirm('Vui lòng xác nhận'))"><a href="delete_bill.php?SoHD=<?php echo $row['SoHD']; ?>">Xóa</a></button></td>
+                                            <td>
+                                                        <a href="update_product.php?MaHang=<?php echo $row['MaHang']; ?>">
+                                                            <button class="btn btn-success">Sửa</button>
+                                                        </a>
+                                                    </td>
+
+                                                    <td>
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            Xóa
+                                                        </button>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">Bạn Có Muốn Xóa?</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <!-- <div class="modal-body">
+                                                                        Bạn Có muốn xóa?
+                                                                    </div> -->
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                                                        <a href="./delete_product.php?MaHang=<?php echo $row['MaHang']; ?>">
+                                                                            <button type="button" class="btn btn-primary">
+                                                                                Xóa
+                                                                            </button>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                             </tr>
                                     <?php
                                             $i++;

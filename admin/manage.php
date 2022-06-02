@@ -120,12 +120,9 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-<<<<<<< HEAD
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php"
                                 aria-expanded="false">
-=======
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.php" aria-expanded="false">
->>>>>>> f774dba256924372bc20f2aab224ab14098af82c
+                        
                                 <i class="far fa-clock" aria-hidden="true"></i>
                                 <span class="hide-menu">Trang chủ</span>
                             </a>
@@ -280,43 +277,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-
-<<<<<<< HEAD
-                                    //b3  kiem tra va xu li tap ket qua  - ung voi cau lenh select  
-                                    if (mysqli_num_rows($result) > 0) {
-                                        $i = 1;
-                                        while ($row = mysqli_fetch_assoc($result)) {
-                                    ?>
-                                            <tr>
-                                                <th scope="row"><?php echo $i; ?></th>
-                                                <td><?php echo $row['TenNV']; ?></td>
-                                                <td><?php echo $row['EmailNV']; ?></td>
-                                                <td><?php echo $row['NTNS']; ?></td>
-                                                <td><?php echo $row['GioiTinhNV']; ?></td>
-                                                <td><?php echo $row['SđtNV']; ?></td>
-                                                <td><?php echo $row['DiaChiNV']; ?></td>
-                                                <td>
-                                                <?php
-                                                    if($row["permission"] == 1){
-                                                        echo "Admin";
-                                                    }if($row["permission"] == 0){
-                                                        echo "Member";
-                                                    }
-                                                ?>
-                                            </td>
-                                                <td><button><a href="update_member.php?MaNV=<?php echo $row['MaNV']; ?>"></i>Sửa</a></button></td>
-                                                <td><button onclick="alert(confirm('Vui lòng xác nhận'))"><a href="delete_member.php?MaNV=<?php echo $row['MaNV']; ?>">Xóa</a></button></td>
-                                            </tr>
+                                                    
                                     <?php
-                                            $i++;
-=======
-                                                </tr>
-                                        <?php
-                                                $i++;
+                                           $i++;
+                                         
                                             }
->>>>>>> f774dba256924372bc20f2aab224ab14098af82c
                                         }
-
+                                        
                                         ?>
                                     </tbody>
                                 </table>
@@ -359,6 +326,5 @@
         <script src="js/sidebarmenu.js"></script>
         <!--Custom JavaScript -->
         <script src="js/custom.js"></script>
-</body>
-
+</body>                                             
 </html>

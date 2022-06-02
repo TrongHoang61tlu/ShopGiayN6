@@ -127,7 +127,7 @@
 ?>
 
     <div class="container">
-        <h1 >Thêm Nhân Viên</h1>
+        <h1 >Thêm Sản Phẩm</h1>
         <form class="mt-4" method="POST" action="">
             <div class="mb-3">
                 <label for="TenSanPham" class="form-label">Tên Sản Phẩm</label>
@@ -158,7 +158,9 @@
 							</div>
                         </td>
             <button type="submit" class="btn btn-primary mt-3 mb-4" name="submit">Lưu</button>
-            <button><a href="./manage.php" class="btn btn-danger">Quay Lại</a> </button>
+            
+                <button class="btn btn-success mb-2 "><a href="product.php" class="text-white">Quay Lại</a></button>
+            
         </form>
     </div>
     <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a

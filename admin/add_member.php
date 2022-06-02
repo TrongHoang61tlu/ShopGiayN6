@@ -171,7 +171,7 @@
                 <input type="text" name="DiaChiNV" class="form-control" id="DiaChiNV">
             </div>
             <button type="submit" class="btn btn-primary mt-3 mb-4" name="submit">Lưu</button>
-            <button><a href="./manage.php" class="btn btn-danger">Quay Lại</a> </button>
+            <button class="btn btn-success mb-2 "><a href="manage.php" class="text-white">Quay Lại</a></button>
         </form>
     </div>
     <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a

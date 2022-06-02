@@ -111,16 +111,14 @@
 
 
     if(isset($_POST["submit"])) {
-        $MaNV = $_POST['MaNV'];
-        $ten = $_POST['TenNV'];
-        $ngaysinh = $_POST['NTNS'];
-        $gioitinh = $_POST['GioiTinhNV'];
-        $sodienthoai = $_POST['SđtNV'];
-        $email = $_POST['EmailNV'];
-        $matkhau = $_POST['PasswordNV']; 
-        $diachi = $_POST['DiaChiNV'];
+        $MaHang = $_POST['MaHang'];
+        $TenHang = $_POST['TenHang'];
+        $Size = $_POST['Size'];
+        $SlgTon = $_POST['SlgTon'];
+        $GiaBan = $_POST['GiaBan'];
+        $TrangThai = $_POST['TrangThai'];
 
-        $sql_update = "UPDATE nhanvien set TenNV = '$ten',NTNS = '$ngaysinh',GioiTinhNV = '$gioitinh',SđtNV = '$sodienthoai', EmailNV = '$email', PasswordNV= '$matkhau', DiaChiNV='$diachi' where MaNV = '$MaNV'";
+        $sql_update = "UPDATE hang set TenHang = '$TenHang',Size = '$Size',SlgTon = '$SlgTon',GiaBan = '$GiaBan', NgungBan = '$TrangThai' where MaHang = '$MaHang'";
         mysqli_query($conn,$sql_update);
     }
 ?>
@@ -128,9 +126,9 @@
 
     <?php 
         include ("../config/config.php");
-        if(isset($_GET['MaNV'])) {
-            $MaNV = $_GET['MaNV'];
-            $sql = "SELECT * FROM nhanvien WHERE MaNV = '$MaNV'";
+        if(isset($_GET['MaHang'])) {
+            $MaHang = $_GET['MaHang'];
+            $sql = "SELECT * FROM hang WHERE MaHang = '$MaHang'";
             $result = mysqli_query($conn,$sql);
         }
     ?>
@@ -138,37 +136,33 @@
         while ($row = mysqli_fetch_assoc($result)){?>
         <form class="mt-4" method="POST" action="">
             <div class="mb-3">
-                <label for="TenNV" class="form-label">Họ và Tên</label>
-                <input type="text" name="TenNV" class="form-control" id="hovaten" value="<?php echo $row['TenNV']; ?>">
+                <label for="TenHang" class="form-label">Tên Sản Phẩm</label>
+                <input type="text" name="TenHang" class="form-control" id="TenHang" value="<?php echo $row['TenHang']; ?>">
             </div>
             <div class="mb-3">
-                <label for="NTNS" class="form-label">Ngày sinh</label>
-                <input type="date" name="NTNS" class="form-control" id="NTNS" value="<?php echo $row['NTNS']; ?>">
+                <label for="Size" class="form-label">Size</label>
+                <input type="text" name="Size" class="form-control" id="Size" value="<?php echo $row['Size']; ?>">
             </div>
             <div class="mb-3">
-                <label for="GioiTinhNV" class="form-label">Giới tính</label>
-                <input type="text" name="GioiTinhNV" class="form-control" id="GioiTinhNV" value="<?php echo $row['GioiTinhNV']; ?>">
+                <label for="SlgTon" class="form-label">Số Lượng Tồn</label>
+                <input type="text" name="SlgTon" class="form-control" id="SlgTon" value="<?php echo $row['SlgTon']; ?>">
             </div>
             <div class="mb-3">
-                <label for="SđtNV" class="form-label">Số điện thoại</label>
-                <input type="text" name="SđtNV" class="form-control" id="SđtNV" value="<?php echo $row['SđtNV']; ?>">
+                <label for="GiaBan" class="form-label">Giá Bán</label>
+                <input type="text" name="GiaBan" class="form-control" id="GiaBan" value="<?php echo $row['GiaBan']; ?>">
             </div>
-            <div class="mb-3">
-                <label for="EmailNV" class="form-label">Email </label>
-                <input type="email" name="EmailNV" class="form-control" id="EmailNV" value="<?php echo $row['EmailNV']; ?>">
-            </div>
-
-            <div class="mb-3">
-                <label for="PasswordNV" class="form-label">Mật khẩu  </label>
-                <input type="text" name="PasswordNV" class="form-control" id="PasswordNV" value="<?php echo $row['PasswordNV']; ?>">
-            </div>
-            <div class="mb-3">
-                <label for="DiaChiNV" class="form-label">Địa chỉ  </label>
-                <input type="text" name="DiaChiNV" class="form-control" id="DiaChiNV" value="<?php echo $row['DiaChiNV']; ?>">
-            </div>
-            <input type="hidden" name="MaNV" class="form-control" id= "MaNV" value="<?php echo $row['MaNV']; ?>">
+            
+							<div class="form-group">
+								<label>Trạng Thái</label>
+								<select name="TrangThai" class="form-control" id="TrangThai">
+									<option value=1> Vẫn Kinh Doanh</option>
+									<option value=0>Ngừng Kinh Doanh</option>
+									</select>
+							</div>
+                        
+            <input type="hidden" name="MaHang" class="form-control" id= "MaHang" value="<?php echo $row['MaHang']; ?>">
             <button type="submit" class="btn btn-primary mt-3 mb-4" name="submit">Lưu</button>
-            <button class="btn btn-success mb-2 "><a href="manage.php" class="text-white">Quay Lại</a></button>
+            <button class="btn btn-success mb-2 "><a href="product.php" class="text-white">Quay Lại</a></button>
         </form>
         <?php } ?>
 
